@@ -41,9 +41,16 @@ body {
   color:grey;
 }
 
-#navbar a:hover {
-  border-bottom: 2px solid #fff;
+nav a:after {
+  content: "_";
+  animation: blink 1s infinite;
 }
+
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
 
 #h1-section {
   color:#3a474a;
@@ -172,3 +179,4 @@ footer {
     font-size: 0.9rem;
   }
 }
+
